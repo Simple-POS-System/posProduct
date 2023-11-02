@@ -24,7 +24,7 @@ public class ProductService {
 
     public ResponseEntity<?> addProduct(Product product){
         if(productRepository.findProductByProductName(product.getProductName()) != null){
-            return ResponseEntity.ok("Product " + product.getProductName() + " is already entered");
+            return ResponseEntity.ok("Product " + product.getProductName() + " is already entered to the inventory");
         }
         product.setProductId(generateProductId());
         return ResponseEntity.ok(productRepository.save(product));
@@ -58,7 +58,7 @@ public class ProductService {
         if(productToDelete == null){
             throw new ProductNotFountException("Product not found with ID :: " + productId);
         }
-        productRepository.delete(productToDelete);
+        productRepository.deleteProductByProductId(productId);
         return ResponseEntity.ok("Product deleted successfully");
     }
 }
