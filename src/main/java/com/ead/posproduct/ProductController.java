@@ -41,6 +41,15 @@ public class ProductController {
         }
     }
 
+    @PutMapping("/updateQuantity/{productId}/{quantity}")
+    public ResponseEntity<?> updateQuantity(@PathVariable String productId, @PathVariable int quantity){
+        try {
+            return productService.updateQuantity(productId, quantity);
+        }catch (ProductNotFountException e){
+            return ResponseEntity.ok(e.getMessage());
+        }
+    }
+
     @DeleteMapping("/delete/{productId}")
     public ResponseEntity<String> deleteProduct(@PathVariable String productId){
         try {
@@ -49,4 +58,10 @@ public class ProductController {
             return ResponseEntity.ok(e.getMessage());
         }
     }
+
+    @GetMapping("/checkAvailability/{productId}/{quantity}")
+    public ResponseEntity<?> checkAvailability(@PathVariable String productId, @PathVariable int quantity){
+        return productService.checkAvailability(productId, quantity);
+    }
+
 }
