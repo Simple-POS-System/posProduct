@@ -36,7 +36,7 @@ public class ProductService {
 
     public Product getProductById(String id){
         if(productRepository.findProductByProductId(id) == null){
-            throw new ProductNotFountException("Product not found for this productId :: " + id);
+            return null;
         }
         return productRepository.findProductByProductId(id);
     }
