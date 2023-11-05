@@ -36,7 +36,7 @@ public class ProductService {
 
     public Product getProductById(String id){
         if(productRepository.findProductByProductId(id) == null){
-            throw new ProductNotFountException("Product not found for this productId :: " + id);
+            return null;
         }
         return productRepository.findProductByProductId(id);
     }
@@ -60,5 +60,26 @@ public class ProductService {
         }
         productRepository.deleteProductByProductId(productId);
         return ResponseEntity.ok("Product deleted successfully");
+    }
+
+    public ResponseEntity<?> checkAvailability(String productId, int quantity){
+        Product product = getProductById(productId);
+        if(product == null){
+            return null;
+        }
+        if(product.getQuantity()>=quantity){
+            return  ResponseEntity.ok(1);
+        }
+        return ResponseEntity.ok(0);
+    }
+
+    public ResponseEntity<?> updateQuantity(String productId, int quantity){
+        Product product = getProductById(productId);
+        if(product == null){
+            return null;
+        }
+        product.setQuantity(product.getQuantity() - quantity);
+        productRepository.save(product);
+        return ResponseEntity.ok(product);
     }
 }

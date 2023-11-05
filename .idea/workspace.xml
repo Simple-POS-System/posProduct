@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db2372b3-45b3-47f1-a77a-9ec8db59f3fa" name="Changes" comment="created basic functions in product table">
+    <list default="true" id="db2372b3-45b3-47f1-a77a-9ec8db59f3fa" name="Changes" comment="updated getById function and also set the server port">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ead/posproduct/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ead/posproduct/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ead/posproduct/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ead/posproduct/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ead/posproduct/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ead/posproduct/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ead/posproduct/ProductService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -95,7 +98,14 @@
       <workItem from="1698855825220" duration="78000" />
       <workItem from="1698855916745" duration="2307000" />
       <workItem from="1698858236122" duration="1987000" />
-      <workItem from="1698896506459" duration="2223000" />
+      <workItem from="1698896506459" duration="2369000" />
+      <workItem from="1698902703515" duration="48000" />
+      <workItem from="1698903757154" duration="9000" />
+      <workItem from="1698928746324" duration="36000" />
+      <workItem from="1698989732990" duration="63000" />
+      <workItem from="1698990293915" duration="122000" />
+      <workItem from="1698990977382" duration="12075000" />
+      <workItem from="1699011686980" duration="10163000" />
     </task>
     <task id="LOCAL-00001" summary="initial project file">
       <option name="closed" value="true" />
@@ -113,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698860144772</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated delete function">
+      <option name="closed" value="true" />
+      <created>1698900093327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698900093327</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated getById function and also set the server port">
+      <option name="closed" value="true" />
+      <created>1698998488521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698998488521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +149,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial project file" />
     <MESSAGE value="created basic functions in product table" />
-    <option name="LAST_COMMIT_MESSAGE" value="created basic functions in product table" />
+    <MESSAGE value="updated delete function" />
+    <MESSAGE value="updated getById function and also set the server port" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated getById function and also set the server port" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
